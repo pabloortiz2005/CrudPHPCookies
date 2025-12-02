@@ -1,0 +1,11 @@
+Ejecuta esta sentencia en mysql para que funcione
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    rol VARCHAR(50) NOT NULL DEFAULT 'Usuario',
+    fecha_alta DATE NOT NULL,
+    avatar VARCHAR(255) DEFAULT NULL
+);
